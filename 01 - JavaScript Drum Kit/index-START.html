@@ -64,6 +64,14 @@
         const audios = allKeys.map((sound) =>
           sound.getAttribute("data-key")
         );
+
+        function pressButton(keyEvent) {
+          const keyCode = keyEvent.keyCode;
+          const selectedAudio = allSounds.find((key) => {
+            return key.getAttribute('data-key') == keyCode;
+          });
+          selectedAudio && selectedAudio.play();
+        }
       })(window, document);
     </script>
   </body>
