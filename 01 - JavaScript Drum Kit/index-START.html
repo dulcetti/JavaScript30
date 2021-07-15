@@ -69,10 +69,12 @@
 
         function pressButton(keyEvent) {
           const keyCode = keyEvent.keyCode;
-          const selectedAudio = allSounds.find((key) => {
+          const selectedAudio = allSounds.find((audio) => {
+            return audio.getAttribute('data-key') == keyCode;
+          });
+          const selectedKeys = allKeys.find((key) => {
             return key.getAttribute('data-key') == keyCode;
           });
-          selectedAudio && selectedAudio.play();
         }
       })(window, document);
     </script>
