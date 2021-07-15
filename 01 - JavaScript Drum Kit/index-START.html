@@ -59,6 +59,8 @@
       ((win, doc) => {
         let allKeys = doc.querySelectorAll(".key");
         let allSounds = doc.querySelectorAll("audio");
+        allKeys = [...allKeys];
+        allSounds = [...allSounds];
       })(window, document);
     </script>
   </body>
