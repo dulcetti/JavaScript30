@@ -65,6 +65,8 @@
           sound.getAttribute("data-key")
         );
 
+        document.addEventListener('keyup', pressButton, false);
+
         function pressButton(keyEvent) {
           const keyCode = keyEvent.keyCode;
           const selectedAudio = allSounds.find((key) => {
