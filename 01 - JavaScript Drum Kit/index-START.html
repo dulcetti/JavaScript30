@@ -61,6 +61,9 @@
         let allSounds = doc.querySelectorAll("audio");
         allKeys = [...allKeys];
         allSounds = [...allSounds];
+        const audios = allKeys.map((sound) =>
+          sound.getAttribute("data-key")
+        );
       })(window, document);
     </script>
   </body>
