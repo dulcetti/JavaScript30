@@ -81,6 +81,13 @@
           audio.play();
           toggleButton(key);
         }
+        
+        function toggleButton(button) {
+          button.classList.add('playing');
+          setTimeout(() => {
+            button.classList.remove('playing');
+          }, 50);
+        }
       })(window, document);
     </script>
   </body>
