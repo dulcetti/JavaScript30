@@ -75,6 +75,10 @@
           const selectedKeys = allKeys.find((key) => {
             return key.getAttribute('data-key') == keyCode;
           });
+
+          if (selectedAudio && selectedKeys) {
+            playAudio(selectedAudio, selectedKeys);
+          }
         }
         
         function playAudio(audio, key) {
