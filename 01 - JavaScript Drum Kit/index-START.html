@@ -57,12 +57,8 @@
 
     <script>
       ((win, doc) => {
-        let allSounds = doc.querySelectorAll(".key");
-        allSounds = [...allSounds];
-        const keysCode = allSounds.map((sound) =>
-          sound.getAttribute("data-key")
-        );
-        console.info(keysCode);
+        let allKeys = doc.querySelectorAll(".key");
+        let allSounds = doc.querySelectorAll("audio");
       })(window, document);
     </script>
   </body>
