@@ -76,6 +76,11 @@
             return key.getAttribute('data-key') == keyCode;
           });
         }
+        
+        function playAudio(audio, key) {
+          audio.play();
+          toggleButton(key);
+        }
       })(window, document);
     </script>
   </body>
