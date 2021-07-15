@@ -82,6 +82,7 @@
         }
         
         function playAudio(audio, key) {
+          audio.currentTime = 0;
           audio.play();
           toggleButton(key);
         }
