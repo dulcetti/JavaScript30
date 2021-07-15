@@ -62,10 +62,11 @@
     </style>
 
     <script>
-      const now = new Date();
-      const hours = now.getHours();
-      const minutes = now.getMinutes();
-      const seconds = now.getSeconds();
+      ((wind, doc) => {
+        const handHour = doc.querySelector(".hour-hand");
+        const handMinutes = doc.querySelector(".min-hand");
+        const handSeconds = doc.querySelector(".second-hand");
+      })(window, document);
     </script>
   </body>
 </html>
