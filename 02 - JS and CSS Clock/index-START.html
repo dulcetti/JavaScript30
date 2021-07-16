@@ -85,6 +85,9 @@
           handMinutes.style.transform = `rotate(${minutesDegrees}deg)`;
           handSeconds.style.transform = `rotate(${secondsDegrees}deg)`;
         }
+
+        setInterval(setTime, 1000);
+        setTime();
       })(window, document);
     </script>
   </body>
